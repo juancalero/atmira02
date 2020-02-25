@@ -1,4 +1,4 @@
-prueba
+<h2>Proyecto Angular 02</h2> 
 <table class="table table-hover">
   <thead>
   <tr>
@@ -17,6 +17,7 @@ prueba
           <td>{{ user.direccion }}</td>
           <td>{{ user.telefono }}</td>
           <td><a [routerLink]="['/user','edit', user.id]" class="btn btn-primary">Edit</a></td>
+          <td><a [routerLink]="['/user','view', user.id]" class="btn btn-success">View</a></td>
           <td><a (click) = "deleteUser(user.id, i)" class="btn btn-danger">Delete</a></td>
       </tr>
   </tbody>
